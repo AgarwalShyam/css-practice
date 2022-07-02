@@ -373,6 +373,10 @@ To make sure this works correctly on different browsers, you have to add additio
 
 Make sure to follow these approaches in case you don't want to display the scrollbars on Windows machines.
 
+Useful Resources & Links
+Dive Deeper into Selected Topics
 
+Font size properties and values: https://developer.mozilla.org/en-US/docs/Web/CSS/font-size
+Viewport units and browser support: https://caniuse.com/#search=vh
 
 
