@@ -1,0 +1,5 @@
+1.) Inline elements : It taked only required width of the sceen .....span, anchor tag(a) etc.
+2.) Block elements: It takes full width of the screem ......div, h1,h2..., section etc.
+
+
+Inline element : top and botton margin do not effect on inline elements
