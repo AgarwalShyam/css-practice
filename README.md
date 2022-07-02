@@ -333,6 +333,21 @@ Filters: https://developer.mozilla.org/en-US/docs/Web/CSS/filter
 Styling SVG: https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/SVG_and_CSS
 
 
+Size and Units.
+There are mulyiple units are there
+px
+%,
+rem,
+rm,
+vh,
+vw
+Some time we need size more responsive as per browser setting it means when user change his browser font size it should reflect in our 
+web application as well but that can not be possible by % and px as it created fix size.
+For that we can rem and em but em has one property that we  do not use very oftenly 
+as 1rem = 1em = 16px but in case of em it multiple the values with the inheriated values so 
+for parent has 1.2en font size and in child we specifies font size 1.1em then the font size of that child text would be 1.1em * 1.2em 
+but in case of rem it takes only the specified size applied to the element.
+
 
 
 
