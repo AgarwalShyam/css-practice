@@ -348,6 +348,31 @@ as 1rem = 1em = 16px but in case of em it multiple the values with the inheriate
 for parent has 1.2en font size and in child we specifies font size 1.1em then the font size of that child text would be 1.1em * 1.2em 
 but in case of rem it takes only the specified size applied to the element.
 
+== 
+vh and vw units 
+we use those units to refer hight or width to the view postn like below
+width:100vh
+height: 100vh
+
+Windows, Viewport Units & Scrollbars
+Hiding Scrollbars on Windows machines
+After adding vw , you probably saw that the scrollbars appeared in case you are working on Windows. This happens as using vw  on Windows does not include the scrollbars - vw: 100  is  equal to 100% of the viewport width + the scrollbars. On the Mac this is not an issue, but when using Windows it is as the scrollbars are displayed by default.
+
+In case you don't want to display these scrollbars, you can use one of these solutions:
+
+- Use width: 100%  instead of vw: 100
+
+- Add overflow-x: hidden;  to the body selector in the shared.css file to hide the horizontal scrollbar (or overflow-y: hidden  to hide the vertical scrollbar)
+
+Alternatively you could also use the ::-webkit-scrollbar pseudo element. Simply add the following code to the shared.css file:
+
+body: :-webkit-scrollbar {
+    width: 0
+}
+To make sure this works correctly on different browsers, you have to add additional code to it. This blog post nicely summarizes all the code needed right here.
+
+Make sure to follow these approaches in case you don't want to display the scrollbars on Windows machines.
+
 
 
 
