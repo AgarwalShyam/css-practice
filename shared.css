@@ -229,3 +229,7 @@ only position:fixed only works fine */
 .button:focus {
     outline: none;
 }
+
+.open {
+    display: block !important;
+}

@@ -6,29 +6,40 @@ const toggelButton = document.querySelector('.toggle-button');
 const mobileNav = document.querySelector('.mobile-nav');
 console.log(modalNoButton);
 
+// console.log(modal.style.backgroungImage); // when you any property we need to use camle case notation
+// console.log(modal.style['background-image']); // if you want to use same notation then we need to use like that
+
 
 
 for (let index = 0; index < selectPlanButtons.length; index++) {
     selectPlanButtons[index].addEventListener('click', function(){
-        modal.style.display = 'block';
-        backdrop.style.display = 'block';
-       
+        // modal.style.display = 'block';
+        // backdrop.style.display = 'block';
+        // modal.className = 'open'; This will actually overrite the complete class list of the element so we use classList
+        modal.classList.add('open');
+        backdrop.classList.add('open');
     })
 }
 
 backdrop.addEventListener('click', function(){
-    mobileNav.style.display = "none";
+    mobileNav.classList.remove('open');
     closeModal();
 });
 
-modalNoButton.addEventListener('click', closeModal);
+if(modalNoButton){
+    modalNoButton.addEventListener('click', closeModal);
+}
+
+
 
 function closeModal(){
-    backdrop.style.display = 'none';
-    modal.style.display = 'none';
+    backdrop.classList.remove('open');
+    if(modal){
+        modal.classList.remove('open');
+    }
 }
 
 toggelButton.addEventListener('click', function(){
-    mobileNav.style.display = 'block';
-    backdrop.style.display = 'block';
+    mobileNav.classList.add('open');
+    backdrop.classList.add('open');
 });
