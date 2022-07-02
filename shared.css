@@ -14,12 +14,24 @@ body {
 we do not need to top :0 and left:0 for positioining fixed 
 only position:fixed only works fine */
 
+.backdrop {
+    position: fixed;
+    display: none;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+}
+
+
 .main-header {
     background:#2ddf5c;
     position: fixed;
     left: 0;
     top: 0;
-    padding: 8px 16px;
+    padding: .5rem 1rem;
     width:100%;
     z-index: 1;
 }
@@ -28,8 +40,8 @@ only position:fixed only works fine */
     color: #0e4f1f;
     font-weight: bold;
     text-decoration: none;
-    font-size: 22px;
-    height: 22px;
+    font-size: 1.5rem;
+    height: 1.5rem;
     /* width: 22px; */
     display: inline-block;
 }
@@ -63,14 +75,14 @@ only position:fixed only works fine */
 
 .main-nav__item {
     display: inline-block;
-    margin: 0 16px;
+    margin: 0 1rem;
 }
 
 .main-nav__item  a {
     text-decoration: none;
     color: #0e4f1f;
     font-weight: bold;
-    padding: 3px 0;
+    padding: .2rem 0;
 }
 /* psuedo class example */
 /* .main-nav__item a::after{
@@ -101,7 +113,7 @@ only position:fixed only works fine */
 .main-nav__item--cta a {
     color: white;
     background: red;
-    padding: 8px 16px;
+    padding: .5rem 1rem;
     border-radius: 8px;
 }
 
@@ -115,8 +127,8 @@ only position:fixed only works fine */
 
 .main-footer {
     background:black;
-    padding: 32px;
-    margin-top: 48px;
+    padding: 2rem;
+    margin-top: 3rem;
 }
 
 .main-footer__links {
@@ -128,7 +140,7 @@ only position:fixed only works fine */
 
 .main-footer__link {
     display: inline-block;
-    margin: 0 16px;
+    margin: 0 1rem;
 }
 
 .main-footer__link a {
@@ -147,7 +159,7 @@ only position:fixed only works fine */
     color: white;
     font: inherit;
     border: 1.5px solid #0e4f1f;
-    padding: 8px;
+    padding: .5rem;
     border-radius: 8px;
     font-weight: bold;
     cursor: pointer;
